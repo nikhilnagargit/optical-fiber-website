@@ -3,8 +3,10 @@ import Hero from "./components/hero";
 function App() {
   return (
     <>
-      <Navbar />
-      <Hero />
+      <div className="relative bg-black">
+        <Navbar />
+        <Hero />
+      </div>
     </>
   );
 }
