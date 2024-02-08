@@ -9,10 +9,10 @@ function Navbar() {
         src={logo}
         alt="logo"
       />
-      <div className="flex text-[#82FF87] gap-10 pr-10 text-sm lg:pr-10">
-        <p className="hover:text-purple-200 cursor-pointer">About Us</p>
-        <p className="hover:text-purple-200 cursor-pointer">Services</p>
-        <p className="hover:text-purple-200 cursor-pointer">Customers</p>
+      <div className="flex text-[#82FF87] gap-10 pr-10 text-lg">
+        <p className="hover:text-purple-300 cursor-pointer">About Us</p>
+        <p className="hover:text-purple-300 cursor-pointer">Services</p>
+        <p className="hover:text-purple-300 cursor-pointer">Customers</p>
       </div>
     </div>
   );

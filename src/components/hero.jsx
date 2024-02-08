@@ -5,6 +5,7 @@ import slide2 from "../assets/slide2.jpg";
 import slide3 from "../assets/slide3.jpg";
 import cylinder from "../assets/cylinder.svg";
 import { Button } from "@material-tailwind/react";
+import { ReactTyped } from "react-typed";
 
 function Hero() {
   let slides = [slide1, slide2, slide3];
@@ -12,7 +13,7 @@ function Hero() {
     <>
       <div className="relative flex justify-center">
         <Carousel
-          className="h-[600px]"
+          className="h-screen"
           autoplay
           loop
           nextArrow={(handleInput) => {
@@ -43,9 +44,19 @@ function Hero() {
                 // backgroundSize: "100% 100%",
               }
             }>
-            Port-to-port lambdas with 99.9% QoS
+            Port-to-port lambdas with{" "}
+            <span className="text-purple-300">
+              <ReactTyped
+                strings={["Performance", "99.9% QOS", "Bandwidth"]}
+                typeSpeed={40}
+                backDelay={2000}
+                backSpeed={40}
+                loop
+                showCursor={false}
+              />
+            </span>
           </div>
-          <div className="text-white  backdrop-blur-sm p-2">
+          <div className="text-white text-lg backdrop-blur-sm p-2">
             Transport capacity while taking care of your optical and financial
             budget with our unified OPGW network.
           </div>
