@@ -1,6 +1,7 @@
 import Navbar from "./components/navbar";
 import Hero from "./components/hero";
 import Partners from "./components/partners";
+import WhyChooseUsSection from "./components/whyChooseUs";
 function App() {
   return (
     <>
@@ -8,6 +9,7 @@ function App() {
         <Navbar />
         <Hero />
         <Partners />
+        <WhyChooseUsSection />
       </div>
     </>
   );
