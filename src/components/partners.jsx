@@ -7,37 +7,35 @@ import curves from "../assets/curves.png";
 
 function Partners() {
   return (
-    <div className="relative flex flex-col items-center text-white py-20 px-10">
-      <div className="text-[40px] font-bold z-20 text-purple-300 tracking-widest py-5 hover:text-green-300">
+    <div className="relative flex flex-col items-center text-white md:py-20 md:px-10 py-10">
+      <div className="md:text-[40px] text-[35px] font-bold z-20 py-5 text-purple-300  hover:text-green-300">
         Our Partners
       </div>
-      <div className="text-lg pb-10 z-20">
-        Optical highway over high voltage. We simplify everything so you can use
-        the same Lambda with multiple OPGW providers.
-      </div>
-      <div className="z-20 py-20 flex gap-10 justify-center items-center">
+
+      <div className="z-20 md:py-20 py-5 flex flex-row md:gap-10 gap-3 justify-center items-center flex-wrap">
         <img
           src={cfe}
-          className="h-14 grayscale hover:grayscale-0 cursor-pointer"
-          alt=""
-        />
-        <img
-          src={redca}
-          className="h-36 grayscale hover:grayscale-0 cursor-pointer"
+          className="md:h-14 h-10 grayscale hover:grayscale-0 cursor-pointer"
           alt=""
         />
         <img
           src={trelec}
-          className="h-24 grayscale hover:grayscale-0 cursor-pointer"
+          className="md:h-24 h-16 grayscale hover:grayscale-0 cursor-pointer"
           alt=""
         />
         <img
+          src={redca}
+          className="md:h-36 h-24 grayscale hover:grayscale-0 cursor-pointer"
+          alt=""
+        />
+
+        <img
           src={trecsa}
-          className="h-24 grayscale hover:grayscale-0 cursor-pointer"
+          className="md:h-24 h-20 grayscale hover:grayscale-0 cursor-pointer"
           alt=""
         />
       </div>
-      <div className="absolute top-[-150px]  opacity-20">
+      <div className="absolute md:top-[-150px] opacity-30">
         <img src={curves} alt="bg" />
       </div>
     </div>

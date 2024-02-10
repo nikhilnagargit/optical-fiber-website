@@ -42,7 +42,7 @@ const CityModel = () => {
 
 function NightCityCanvas() {
   return (
-    <Canvas frameloop="always" camera={{ position: [0, -20, 10], fov: 10 }}>
+    <Canvas frameloop="always" camera={{ position: [0, -20, 10], fov: 12 }}>
       <Suspense fallback={<Loader />}>
         <OrbitControls
           enableZoom={false}

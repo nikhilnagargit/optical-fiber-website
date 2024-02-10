@@ -13,7 +13,7 @@ function Hero() {
     <>
       <div className="relative flex justify-center">
         <Carousel
-          className="h-screen"
+          className="md:h-screen h-[500px]"
           autoplay
           loop
           nextArrow={(handleInput) => {
@@ -34,9 +34,9 @@ function Hero() {
             />
           ))}
         </Carousel>
-        <div className="absolute top-[30%] p-10 bg-black bg-opacity-20 rounded-3xl">
+        <div className="absolute top-[25%] md:top-[30%] md:p-10 p-3 bg-black bg-opacity-20 rounded-3xl">
           <div
-            className="text-[#82FF87] text-[40px]  backdrop-blur-sm font-bold p-2"
+            className="text-[#82FF87] md:text-[40px] text-[35px]  backdrop-blur-sm font-bold p-2"
             style={
               {
                 // backgroundImage: `url(${cylinder})`,
@@ -44,7 +44,7 @@ function Hero() {
                 // backgroundSize: "100% 100%",
               }
             }>
-            Port-to-port lambdas with{" "}
+            Port to port lambdas with{" "}
             <span className="text-purple-300">
               <ReactTyped
                 strings={["Performance", "99.9% QOS", "Bandwidth"]}
@@ -56,7 +56,7 @@ function Hero() {
               />
             </span>
           </div>
-          <div className="text-white text-lg backdrop-blur-sm p-2">
+          <div className="text-white text-md md:text-lg backdrop-blur-sm p-2">
             Transport capacity while taking care of your optical and financial
             budget with our unified OPGW network.
           </div>
