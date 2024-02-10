@@ -12,7 +12,7 @@ function Services() {
         Whole country coverd, Optical highway over high voltage. We simplify
         everything so you can use the same Lambda with multiple OPGW providers.
       </div>
-      <div className="absolute md:top-[-10%] top-[50%] opacity-60 rotate-180">
+      <div className="absolute md:top-[-10%] top-[50%] opacity-80 rotate-180">
         <img src={curves} alt="bg" />
       </div>
       <div className="md:w-[50%] sm:w-[100%]">

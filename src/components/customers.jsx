@@ -17,7 +17,7 @@ function CustomersSection() {
         <span className="text-green-300"> 25 glorious </span> years of working
         with industry leaders.
       </div>
-      <div className="z-20 py-20 flex flex-wrap gap-10 justify-bottom items-baseline">
+      <div className="z-20 py-20 flex flex-wrap justify-center gap-10 items-baseline">
         <img
           src={logo1}
           className="md:w-24 w-20 grayscale hover:grayscale-0 cursor-pointer"

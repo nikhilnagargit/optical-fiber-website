@@ -63,10 +63,10 @@ function EndSection() {
           </Button>
         </form>
       </Card>
-      <div className="absolute top-[150px] left-0 w-[30%] opacity-60">
+      <div className="absolute top-[150px] left-0 md:w-[30%] w-[40%] opacity-60">
         <img src={opticalfiber} alt="bg" />
       </div>
-      <div className="absolute right-0 w-[20%] top-[50%] transform rotate-180 opacity-70">
+      <div className="absolute right-0 md:w-[20%] w-[30%] top-[50%] transform rotate-180 opacity-70">
         <img src={opticalfiber} alt="bg" />
       </div>
     </div>
