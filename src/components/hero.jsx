@@ -35,7 +35,7 @@ function Hero() {
           ))}
         </Carousel>
         <div className="absolute m-3 top-[25%] md:top-[30%] md:p-10 p-3 bg-black bg-opacity-20 rounded-3xl">
-          <div className="text-[#82FF87] md:text-[40px] text-[35px]  font-bold p-2">
+          <div className="text-[#82FF87] md:text-[40px] text-[30px]  font-bold p-2">
             Port to port lambdas with{" "}
             <span className="text-purple-300">
               <ReactTyped
