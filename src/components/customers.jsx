@@ -12,7 +12,9 @@ import { fadeIn, staggerContainer } from "./motion/motion";
 const logos = [logo1, logo2, logo3, logo4, logo5];
 function CustomersSection() {
   return (
-    <div className="relative flex flex-col items-center text-white px-10 md:mt-20 z-30">
+    <div
+      id="customers"
+      className="relative flex flex-col items-center text-white px-10 md:mt-20 z-30">
       <div className="md:text-[40px] text-[35px] font-bold z-20 md:pb-4  py-5 text-purple-300  hover:text-green-300">
         Our Customers
       </div>
@@ -24,7 +26,7 @@ function CustomersSection() {
         variants={staggerContainer()}
         initial="hidden"
         whileInView="show">
-        <div className="z-20 py-20 flex flex-wrap justify-center gap-6 items-baseline">
+        <div className="z-20 py-20 flex flex-wrap justify-center md:gap-10 gap-5 items-baseline">
           <motion.div variants={fadeIn("right", "spring", 0.24, 0.5)}>
             <img
               src={logo1}

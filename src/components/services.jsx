@@ -5,7 +5,9 @@ import { motion } from "framer-motion";
 import guatemala from "../assets/guatemala.png";
 function Services() {
   return (
-    <div className="relative flex flex-col items-center text-white py-16 md:px-20 ">
+    <div
+      className="relative flex flex-col items-center text-white py-16 md:px-20"
+      id="services">
       <div className="md:text-[40px] text-[35px] font-bold z-20 md:pb-4  py-5 text-purple-300  hover:text-green-300">
         Custom IPODWDM
       </div>

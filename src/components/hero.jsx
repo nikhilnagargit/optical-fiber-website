@@ -30,11 +30,11 @@ function Hero() {
               key={idx}
               src={item}
               alt="img"
-              className="h-full w-full object-cover opacity-50"
+              className="h-full w-full object-cover opacity-90"
             />
           ))}
         </Carousel>
-        <div className="absolute m-3 top-[25%] md:top-[30%] md:p-10 p-3 bg-black bg-opacity-20 rounded-3xl">
+        <div className="absolute m-3 top-[25%] md:top-[30%] md:p-10 p-3 bg-black bg-opacity-30 rounded-3xl">
           <div className="text-[#82FF87] md:text-[40px] text-[30px]  font-bold p-2">
             Port to port lambdas with{" "}
             <span className="text-purple-300">
@@ -53,7 +53,9 @@ function Hero() {
             budget with our unified OPGW network.
           </div>
           <div className="flex gap-4 p-2">
-            <Button color="green">Contact Us</Button>
+            <Button color="green">
+              <a href="#contactus">Contact Us</a>
+            </Button>
             <Button color="white" className="text-[#82FF87]" variant="outlined">
               Explore More
             </Button>

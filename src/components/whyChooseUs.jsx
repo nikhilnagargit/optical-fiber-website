@@ -35,7 +35,9 @@ const data = [
 ];
 function WhyChooseUsSection() {
   return (
-    <div className="relative flex flex-col items-center text-white md:py-10 md:px-10 p-3 w-full md:h-screen">
+    <div
+      id="whyus"
+      className="relative flex flex-col items-center text-white md:py-10 md:px-10 p-3 w-full md:h-screen">
       <div className="md:text-[40px] text-[35px] font-bold z-20 md:pb-24  py-5 text-purple-300  hover:text-green-300">
         Why Us
       </div>

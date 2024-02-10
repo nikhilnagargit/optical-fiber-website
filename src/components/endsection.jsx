@@ -7,10 +7,12 @@ import {
   Typography,
 } from "@material-tailwind/react";
 import opticalfiber from "../assets/opticalfiber.png";
-
+import StarsCanvas from "./canvas/stars";
 function EndSection() {
   return (
-    <div className="relative flex md:mt-10 flex-col items-center text-white px-5 bg-black">
+    <div
+      id="contactus"
+      className="relative flex md:mt-10 flex-col items-center text-white px-5 bg-black">
       <div className="md:py-20 md:text-[40px] text-[15px] font-bold z-20 md:pb-4  py-5 text-green-300  hover:text-purple-300">
         UNLIMITED RELIABILITY AT YOUR FINGERTIPS
       </div>
@@ -19,7 +21,7 @@ function EndSection() {
       </div>
       <Card
         color="transparent"
-        className="border opacity-90 md:p-8 p-5 border-green-300 z-30 bg-blue-700 bg-opacity-10 ">
+        className="opacity-90 md:p-8 p-5 z-30 bg-blue-700 bg-opacity-10 ">
         <Typography variant="h5" color="white">
           Get In Touch
         </Typography>
@@ -69,6 +71,8 @@ function EndSection() {
       <div className="absolute right-0 md:w-[20%] w-[30%] top-[50%] transform rotate-180 opacity-70">
         <img src={opticalfiber} alt="bg" />
       </div>
+
+      <StarsCanvas />
     </div>
   );
 }
