@@ -1,6 +1,7 @@
 import React from "react";
-import curves from "../assets/curves.png";
-import GlobeCanvas from "./canvas/globe";
+import curvesreverse from "../assets/curvesreverse.png";
+// import GlobeCanvas from "./canvas/globe";
+import { motion } from "framer-motion";
 import guatemala from "../assets/guatemala.png";
 function Services() {
   return (
@@ -12,9 +13,19 @@ function Services() {
         Whole country coverd, Optical highway over high voltage. We simplify
         everything so you can use the same Lambda with multiple OPGW providers.
       </div>
-      <div className="absolute md:top-[-10%] top-[50%] opacity-80 rotate-180">
-        <img src={curves} alt="bg" />
-      </div>
+      <motion.div
+        animate={{
+          transform: "translateY(10px)",
+        }}
+        transition={{
+          repeat: Infinity,
+          repeatType: "mirror",
+          duration: 1,
+          ease: "easeOut",
+        }}
+        className="absolute md:top-[-10%] top-[50%] opacity-80">
+        <img src={curvesreverse} alt="bg" />
+      </motion.div>
       <div className="md:w-[50%] sm:w-[100%]">
         <img src={guatemala} alt="img" className="" />
       </div>
