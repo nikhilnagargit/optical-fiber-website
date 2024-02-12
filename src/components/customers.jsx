@@ -26,7 +26,7 @@ function CustomersSection() {
         variants={staggerContainer()}
         initial="hidden"
         whileInView="show">
-        <div className="z-40 md:py-10 py-5 flex flex-row md:gap-10 gap-5 justify-center items-center flex-wrap">
+        <div className="z-40 md:py-10 py-5 flex flex-row md:gap-12 gap-5 justify-center items-center flex-wrap">
           <motion.div variants={fadeIn("right", "spring", 0.24, 0.5)}>
             <img
               src={logo1}

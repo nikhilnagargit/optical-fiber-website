@@ -38,7 +38,7 @@ function WhyChooseUsSection() {
     <div
       id="whyus"
       className="relative flex flex-col items-center justify-center text-white mt-20 w-full md:h-screen">
-      <div className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text md:text-[40px] text-[30px] font-bold  text-purple-300  hover:text-green-300">
+      <div className="z-50 bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text md:text-[40px] text-[30px] font-bold  text-purple-300  hover:text-green-300">
         Why Us
       </div>
       <div className="z-20  md:text-lg text-sm text-indigo-200 px-4 text-center">
