@@ -37,21 +37,22 @@ function WhyChooseUsSection() {
   return (
     <div
       id="whyus"
-      className="relative flex flex-col items-center text-white md:py-10 md:px-10 p-3 w-full md:h-screen">
-      <div className="md:text-[40px] text-[35px] font-bold z-20 md:pb-24  py-5 text-purple-300  hover:text-green-300">
+      className="relative flex flex-col items-center justify-center text-white mt-20 w-full md:h-screen">
+      <div className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text md:text-[40px] text-[35px] font-bold  text-purple-300  hover:text-green-300">
         Why Us
       </div>
-      {/* <div className="text-lg pb-10 z-20">
+      <div className="z-20  md:text-lg text-sm text-indigo-200 px-4 text-center">
         Optical highway over high voltage. We simplify everything so you can use
         the same Lambda with multiple OPGW providers.
-      </div> */}
-      <div className="z-20 grid md:grid-cols-2 grid-cols-1 md:gap-3 gap-1">
+      </div>
+
+      <div className="z-20 grid grid-cols-1 p-8 md:gap-3 gap-1 rounded-2xl bg-black bg-opacity-50">
         {data.map((item, idx) => (
           <div
             key={idx}
-            className="md:text-lg text-sm text-green-300 bg-black bg-opacity-40 rounded-md p-1 flex  items-center gap-3">
+            className="md:text-lg text-sm text-green-300 rounded-md p-1 flex  items-center gap-3">
             <item.icon
-              className={`text-${item.color}-500 md:border-2 border border-white-300 rounded-full p-1 text-3xl`}
+              className={`text-${item.color}-500 border border-white-300 rounded-full p-1 text-3xl`}
             />
             <p>{item.text}</p>
           </div>

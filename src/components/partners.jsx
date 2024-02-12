@@ -9,15 +9,19 @@ import { staggerContainer, fadeIn } from "./motion/motion";
 
 function Partners() {
   return (
-    <div className="relative flex flex-col items-center text-white md:py-20 md:px-10 py-10">
-      <div className="md:text-[40px] text-[35px] font-bold z-40 py-5 text-purple-300  hover:text-green-300">
-        Our Partners
+    <div className=" mt-10 relative flex flex-col items-center text-white px-10 z-30">
+      <div className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text md:text-[40px] text-[35px] font-bold z-20 hover:text-green-400">
+        Partners
+      </div>
+      <div className="md:text-lg text-sm text-indigo-200 px-4 text-center">
+        <span className="text-green-300"> World class </span> partners
+        fulfilling your requirements.
       </div>
       <motion.section
         variants={staggerContainer()}
         initial="hidden"
         whileInView="show">
-        <div className="z-40 md:py-20 py-5 flex flex-row md:gap-10 gap-3 justify-center items-center flex-wrap">
+        <div className="z-40 md:py-10 py-5 flex flex-row md:gap-5 justify-center items-center flex-wrap">
           <motion.div variants={fadeIn("right", "spring", 0.24, 0.5)}>
             <img
               src={cfe}
@@ -28,7 +32,7 @@ function Partners() {
           <motion.div variants={fadeIn("right", "spring", 0.34, 0.5)}>
             <img
               src={trelec}
-              className="md:h-24 h-16 grayscale hover:grayscale-0 cursor-pointer"
+              className="md:h-20 h-16 grayscale hover:grayscale-0 cursor-pointer"
               alt=""
             />
           </motion.div>
@@ -36,7 +40,7 @@ function Partners() {
           <motion.div variants={fadeIn("right", "spring", 0.44, 0.5)}>
             <img
               src={redca}
-              className="md:h-36 h-24 grayscale hover:grayscale-0 cursor-pointer"
+              className="md:h-28 h-24 grayscale hover:grayscale-0 cursor-pointer"
               alt=""
             />
           </motion.div>

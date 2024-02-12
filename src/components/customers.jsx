@@ -14,11 +14,11 @@ function CustomersSection() {
   return (
     <div
       id="customers"
-      className="relative flex flex-col items-center text-white px-10 md:mt-20 z-30">
-      <div className="md:text-[40px] text-[35px] font-bold z-20 md:pb-4  py-5 text-purple-300  hover:text-green-300">
-        Our Customers
+      className=" mt-10 relative flex flex-col items-center text-white px-10  z-30">
+      <div className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text md:text-[40px] text-[35px] font-bold z-20   hover:text-green-400">
+        Customers
       </div>
-      <div className="md:text-lg text-sm px-4 text-center">
+      <div className="md:text-lg text-sm text-indigo-200 px-4 text-center">
         <span className="text-green-300"> 25 glorious </span> years of working
         with industry leaders.
       </div>
@@ -26,7 +26,7 @@ function CustomersSection() {
         variants={staggerContainer()}
         initial="hidden"
         whileInView="show">
-        <div className="z-20 py-20 flex flex-wrap justify-center md:gap-10 gap-5 items-baseline">
+        <div className="z-40 md:py-10 py-5 flex flex-row md:gap-10 gap-5 justify-center items-center flex-wrap">
           <motion.div variants={fadeIn("right", "spring", 0.24, 0.5)}>
             <img
               src={logo1}

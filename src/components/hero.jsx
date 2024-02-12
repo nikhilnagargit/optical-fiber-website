@@ -34,10 +34,10 @@ function Hero() {
             />
           ))}
         </Carousel>
-        <div className="absolute m-3 top-[25%] md:top-[30%] md:p-10 p-3 bg-black bg-opacity-30 rounded-3xl">
-          <div className="text-[#82FF87] md:text-[40px] text-[30px]  font-bold p-2">
+        <div className="absolute m-3 top-[25%] md:top-[30%] p-8 bg-black bg-opacity-50 rounded-3xl">
+          <div className="text-white md:text-[40px] text-[30px]">
             Port to port lambdas with{" "}
-            <span className="text-purple-300">
+            <span className="bg-gradient-to-r font-bold cursor-pointer from-blue-600 via-green-500 to-indigo-400 text-transparent bg-clip-text">
               <ReactTyped
                 strings={["Performance", "99.9% QOS", "Bandwidth"]}
                 typeSpeed={40}
@@ -48,16 +48,20 @@ function Hero() {
               />
             </span>
           </div>
-          <div className="text-white text-md md:text-lg  p-2">
+          <div className="text-indigo-200 text-md md:text-lg   mb-4">
             Transport capacity while taking care of your optical and financial
             budget with our unified OPGW network.
           </div>
-          <div className="flex gap-4 p-2">
-            <Button color="green">
-              <a href="#contactus">Contact Us</a>
+          <div className="flex gap-4 ">
+            <Button
+              color="green"
+              className="bg-gradient-to-r from-blue-700 via-green-600 to-indigo-500">
+              <a href="#contactus" className="font-bold">
+                Contact Us
+              </a>
             </Button>
-            <Button color="white" className="text-[#82FF87]" variant="outlined">
-              Explore More
+            <Button color="white" className="text-white" variant="outlined">
+              <p className=" font-normal">Explore More</p>
             </Button>
           </div>
         </div>

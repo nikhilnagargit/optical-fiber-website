@@ -14,9 +14,9 @@ function App() {
         <Navbar />
         <Hero />
         <Partners />
+        <CustomersSection />
         <WhyChooseUsSection />
         <Services />
-        <CustomersSection />
         <EndSection />
         <Footer />
       </div>
