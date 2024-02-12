@@ -34,7 +34,7 @@ function Hero() {
             />
           ))}
         </Carousel>
-        <div className="absolute m-3 top-[25%] md:top-[30%] p-8 bg-black bg-opacity-50 rounded-3xl">
+        <div className="absolute m-5 top-[25%] md:top-[30%] md:p-8 p-6 bg-black bg-opacity-50 rounded-3xl">
           <div className="text-white md:text-[40px] text-[30px]">
             Port to port lambdas with{" "}
             <span className="bg-gradient-to-r font-bold cursor-pointer from-blue-600 via-green-500 to-indigo-400 text-transparent bg-clip-text">

@@ -13,8 +13,8 @@ function EndSection() {
     <div
       id="contactus"
       className="relative flex md:mt-20 flex-col items-center text-white px-5 bg-black">
-      <div className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 text-transparent bg-clip-text md:text-[40px] text-[35px] text-center font-bold z-50 md:pb-4  py-5 text-green-300  hover:text-indigo-200">
-        UNLIMITED RELIABILITY AT YOUR FINGERTIPS
+      <div className="capitalize bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 text-transparent bg-clip-text md:text-[40px] text-[30px] text-center font-bold z-50 md:pb-4  py-5 text-green-300  hover:text-indigo-200">
+        Unlimited reliablity on your fingertips
       </div>
       <div className="md:text-lg text-sm text-indigo-200 px-4 text-center z-30">
         The perfect network for capacity. It starts today

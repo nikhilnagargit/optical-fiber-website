@@ -38,7 +38,7 @@ function WhyChooseUsSection() {
     <div
       id="whyus"
       className="relative flex flex-col items-center justify-center text-white mt-20 w-full md:h-screen">
-      <div className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text md:text-[40px] text-[35px] font-bold  text-purple-300  hover:text-green-300">
+      <div className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text md:text-[40px] text-[30px] font-bold  text-purple-300  hover:text-green-300">
         Why Us
       </div>
       <div className="z-20  md:text-lg text-sm text-indigo-200 px-4 text-center">
@@ -46,7 +46,7 @@ function WhyChooseUsSection() {
         the same Lambda with multiple OPGW providers.
       </div>
 
-      <div className="z-20 grid grid-cols-1 p-8 md:gap-3 gap-1 rounded-2xl bg-black bg-opacity-50">
+      <div className="z-20 grid grid-cols-1 md:p-8 p-2 md:gap-3 gap-1 rounded-2xl bg-black bg-opacity-30 md:bg-opacity-50">
         {data.map((item, idx) => (
           <div
             key={idx}

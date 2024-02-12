@@ -15,10 +15,10 @@ function CustomersSection() {
     <div
       id="customers"
       className=" mt-10 relative flex flex-col items-center text-white px-10  z-30">
-      <div className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text md:text-[40px] text-[35px] font-bold z-20   hover:text-green-400">
+      <div className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text md:text-[40px] text-[30px] font-bold z-20   hover:text-green-400">
         Customers
       </div>
-      <div className="md:text-lg text-sm text-indigo-200 px-4 text-center">
+      <div className="md:text-lg text-sm text-indigo-200 md:px-4 px-1 text-center">
         <span className="text-green-300"> 25 glorious </span> years of working
         with industry leaders.
       </div>
