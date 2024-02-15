@@ -9,7 +9,10 @@ import { staggerContainer, fadeIn } from "./motion/motion";
 
 function Partners() {
   return (
-    <div className=" mt-16 relative flex flex-col items-center text-white px-10 z-30">
+    <div className=" mt-16 relative flex flex-col items-center text-white px-10">
+      <div className="absolute md:top-[-150px] opacity-20">
+        <img src={curves} alt="bg" />
+      </div>
       <div className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text md:text-[40px] text-[30px] font-bold z-20 hover:text-green-400">
         Partners
       </div>
@@ -25,7 +28,7 @@ function Partners() {
           <motion.div variants={fadeIn("right", "spring", 0.24, 0.5)}>
             <img
               src={cfe}
-              className="md:h-14 h-10 grayscale hover:grayscale-0 cursor-pointer z-100"
+              className="md:h-14 h-10 grayscale hover:grayscale-0 cursor-pointer"
               alt=""
             />
           </motion.div>
@@ -54,19 +57,6 @@ function Partners() {
           </motion.div>
         </div>
       </motion.section>
-      <motion.div
-        animate={{
-          transform: "translateY(10px)",
-        }}
-        transition={{
-          repeat: Infinity,
-          repeatType: "mirror",
-          duration: 1,
-          ease: "easeOut",
-        }}
-        className="absolute md:top-[-150px] opacity-30 z-[-1]">
-        <img src={curves} alt="bg" />
-      </motion.div>
     </div>
   );
 }

@@ -3,9 +3,9 @@ import logo from "../assets/logo.png";
 
 function Navbar() {
   return (
-    <div className="w-full justify-between flex items-center py-2 md:px-10 fixed top-0 z-50 bg-black bg-opacity-50 rounded-lg">
+    <div className="w-full justify-between flex items-center bg-[#060016] bg-opacity-80 py-2 md:px-10 fixed top-0 z-50">
       <img
-        className="h-6 ml-3 md:h-8 object-contain opacity-80 rounded-lg cursor-pointer"
+        className="h-6 ml-3 md:h-8 object-contain rounded-lg cursor-pointer"
         src={logo}
         alt="logo"
       />

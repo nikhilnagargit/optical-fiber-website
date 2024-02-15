@@ -6,14 +6,15 @@ import {
   Button,
   Typography,
 } from "@material-tailwind/react";
-import opticalfiber from "../assets/opticalfiber.png";
-import StarsCanvas from "./canvas/stars";
+
+import NightCityCanvas from "./canvas/nighcity";
+
 function EndSection() {
   return (
     <div
       id="contactus"
-      className="relative flex md:mt-20 flex-col items-center text-white px-5 bg-black">
-      <div className="capitalize bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 text-transparent bg-clip-text md:text-[40px] text-[30px] text-center font-bold z-50 md:pb-4  py-5 text-green-300  hover:text-indigo-200">
+      className="relative flex md:mt-20 flex-col items-center text-white px-5 ">
+      <div className="capitalize bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 text-transparent bg-clip-text md:text-[40px] text-[30px] text-center font-bold z-40 md:pb-4  py-5 text-green-300  hover:text-indigo-200">
         Unlimited reliablity on your fingertips
       </div>
       <div className="md:text-lg text-sm text-indigo-200 px-4 text-center z-30">
@@ -21,7 +22,7 @@ function EndSection() {
       </div>
       <Card
         color="transparent"
-        className="opacity-90 md:p-8 p-5 z-30 bg-blue-700 bg-opacity-10 ">
+        className="opacity-90 md:p-8 p-5 z-30 bg-[#060016]  bg-opacity-80 ">
         <Typography variant="h5" color="white">
           <p>Get In Touch</p>
         </Typography>
@@ -32,8 +33,7 @@ function EndSection() {
               <p className="text-indigo-200">Name</p>
             </Typography>
             <Input
-              placeholder="your name"
-              className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+              className=" !border-t-blue-gray-200 focus:border-white text-white"
               labelProps={{
                 className: "before:content-none after:content-none",
               }}
@@ -43,7 +43,7 @@ function EndSection() {
             </Typography>
             <Input
               placeholder="your mail"
-              className=" !border-t-blue-gray-200 focus:border-white"
+              className=" !border-t-blue-gray-200 focus:border-white text-white"
               labelProps={{
                 className: "before:content-none after:content-none",
               }}
@@ -53,7 +53,7 @@ function EndSection() {
             </Typography>
             <Input
               placeholder="your comments"
-              className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+              className=" !border-t-blue-gray-200 focus:border-white text-white"
               labelProps={{
                 className: "before:content-none after:content-none",
               }}
@@ -68,14 +68,9 @@ function EndSection() {
           </Button>
         </form>
       </Card>
-      <div className="absolute top-[150px] left-0 md:w-[30%] w-[40%] opacity-60">
-        <img src={opticalfiber} alt="bg" />
+      <div className="absolute w-full h-full">
+        <NightCityCanvas />
       </div>
-      <div className="absolute right-0 md:w-[20%] w-[30%] top-[50%] transform rotate-180 opacity-70">
-        <img src={opticalfiber} alt="bg" />
-      </div>
-
-      <StarsCanvas />
     </div>
   );
 }

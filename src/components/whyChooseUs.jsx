@@ -58,9 +58,6 @@ function WhyChooseUsSection() {
           </div>
         ))}
       </div>
-      <div className="absolute w-full h-full">
-        <NightCityCanvas />
-      </div>
     </div>
   );
 }

@@ -6,20 +6,19 @@ import Services from "./components/services";
 import CustomersSection from "./components/customers";
 import EndSection from "./components/endsection";
 import Footer from "./components/footer";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 function App() {
   return (
     <>
-      <div className="">
-        <Navbar />
-        <Hero />
-        <Partners />
-        <CustomersSection />
-        <WhyChooseUsSection />
-        <Services />
-        <EndSection />
-        <Footer />
-      </div>
+      <Navbar />
+      <Hero />
+
+      <Partners />
+      <CustomersSection />
+      <Services />
+      <EndSection />
+      <Footer />
     </>
   );
 }
