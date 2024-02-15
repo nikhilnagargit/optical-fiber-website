@@ -38,7 +38,7 @@ function Services() {
             </Tilt>
           ))}
         </div>
-        <div className="flex-1 md:text-lg text-sm text-indigo-100 font-sans">
+        <div className="flex-1 md:text-lg text-sm text-indigo-100 font-sans text-justify">
           Nuestro servicio WAVELENGTH le facilita a nuestros clientes mover
           cargas pesadas de trafico con alto rendimiento (throughput), a traves
           de entornos metro, metro DCI (Data Center Interconnection), Regional.

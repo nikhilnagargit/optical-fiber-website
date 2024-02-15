@@ -58,7 +58,9 @@ const data = [
 
 function Hero() {
   return (
-    <div className="relative flex flex-col justify-center items-center">
+    <div
+      id="aboutus"
+      className="relative flex flex-col justify-center items-center">
       <StarsCanvas />
       <motion.div
         animate={{
@@ -70,7 +72,7 @@ function Hero() {
           duration: 2,
           ease: "easeOut",
         }}
-        className="absolute md:top-[20%]  top-[40%] opacity-50 z-10 ">
+        className="absolute md:top-[30%] top-[50%] opacity-60 z-20 ">
         <img src={curvesreverse} alt="bg" />
       </motion.div>
       <div className="my-20 md:mx-28 md:max-w-[75%] mx-5 p-5 rounded-xl z-10 bg-[#060016] bg-opacity-60 md:bg-opacity-30">
@@ -103,7 +105,7 @@ function Hero() {
         </div>
       </div>
       <div className="flex justify-center relative w-full">
-        <div className="md:w-[50%] w-[90%] z-10 opacity-75">
+        <div className="md:w-[50%] w-[90%] z-10 opacity-90">
           <img src={guatemala} alt="img" className=""></img>
         </div>
         <div className="md:w-[20%] w-[30%] opacity-80 absolute left-0">
@@ -118,7 +120,7 @@ function Hero() {
         variants={staggerContainer()}
         initial="hidden"
         whileInView="show"
-        className="flex w-full gap-2 md:gap-5 flex-wrap justify-center  md:m-20 m-5 rounded-lg z-50">
+        className="flex w-full gap-2 md:gap-5 flex-wrap justify-center  md:m-20 m-5 rounded-lg z-40">
         {data.map((item, idx) => (
           <motion.div
             key={idx}

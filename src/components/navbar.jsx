@@ -11,7 +11,7 @@ function Navbar() {
       />
       <div className="flex text-white md:gap-10 md:pr-10 md:text-lg text-sm gap-4 pr-4">
         <a
-          href="#whyus"
+          href="#aboutus"
           className="hover:text-indigo-300 text-green-300 cursor-pointer">
           About Us
         </a>

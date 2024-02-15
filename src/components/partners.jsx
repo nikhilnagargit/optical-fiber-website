@@ -24,7 +24,7 @@ function Partners() {
         variants={staggerContainer()}
         initial="hidden"
         whileInView="show">
-        <div className="z-40 md:py-10 py-5 flex flex-row md:gap-5 justify-center items-center flex-wrap">
+        <div className="z-40 md:py-10 py-5 flex flex-row md:gap-5 gap-2 justify-center items-center flex-wrap">
           <motion.div variants={fadeIn("right", "spring", 0.24, 0.5)}>
             <img
               src={cfe}
@@ -35,7 +35,7 @@ function Partners() {
           <motion.div variants={fadeIn("right", "spring", 0.34, 0.5)}>
             <img
               src={trelec}
-              className="md:h-20 h-16 grayscale hover:grayscale-0 cursor-pointer"
+              className="md:h-20 h-14 grayscale hover:grayscale-0 cursor-pointer"
               alt=""
             />
           </motion.div>
@@ -43,7 +43,7 @@ function Partners() {
           <motion.div variants={fadeIn("right", "spring", 0.44, 0.5)}>
             <img
               src={redca}
-              className="md:h-28 h-24 grayscale hover:grayscale-0 cursor-pointer"
+              className="md:h-28 h-20 grayscale hover:grayscale-0 cursor-pointer"
               alt=""
             />
           </motion.div>
@@ -51,7 +51,7 @@ function Partners() {
           <motion.div variants={fadeIn("right", "spring", 0.54, 0.5)}>
             <img
               src={trecsa}
-              className="md:h-24 h-20 grayscale hover:grayscale-0 cursor-pointer"
+              className="md:h-24 h-16 grayscale hover:grayscale-0 cursor-pointer"
               alt=""
             />
           </motion.div>

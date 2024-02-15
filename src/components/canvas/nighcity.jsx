@@ -34,7 +34,7 @@ const CityModel = () => {
   });
   return (
     <mesh ref={ref}>
-      <hemisphereLight intensity={0.02} groundColor="black" />
+      <hemisphereLight intensity={0.01} groundColor="black" />
       <primitive object={nighcitymodel.scene} position={[0, -1, 3]} />
     </mesh>
   );
@@ -42,13 +42,13 @@ const CityModel = () => {
 
 function NightCityCanvas() {
   return (
-    <Canvas frameloop="always" camera={{ position: [0, -20, 10], fov: 10 }}>
+    <Canvas frameloop="always" camera={{ position: [0, -20, 10], fov: 8 }}>
       <Suspense fallback={<Loader />}>
         <OrbitControls
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
-          enableRotate={true}
+          enableRotate={false}
         />
         <CityModel />
       </Suspense>
