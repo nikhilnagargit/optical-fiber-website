@@ -12,17 +12,17 @@ function Navbar() {
       <div className="flex text-white md:gap-10 md:pr-10 md:text-lg text-sm gap-4 pr-4">
         <a
           href="#aboutus"
-          className="hover:text-indigo-300 text-green-300 cursor-pointer">
+          className="hover:text-indigo-300 text-green-400  cursor-pointer">
           About Us
         </a>
         <a
           href="#services"
-          className="hover:text-indigo-300 text-green-300  cursor-pointer">
+          className="hover:text-indigo-300 text-green-400  cursor-pointer">
           Services
         </a>
         <a
           href="#customers"
-          className="hover:text-indigo-300 text-green-300  cursor-pointer">
+          className="hover:text-indigo-300 text-green-400  cursor-pointer">
           Customers
         </a>
       </div>

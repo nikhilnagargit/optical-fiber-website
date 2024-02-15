@@ -17,42 +17,42 @@ import {
   RiAiGenerate,
 } from "react-icons/ri";
 import Tilt from "react-parallax-tilt";
-import bg1 from "../assets/bg1.png";
-import bg2 from "../assets/bg2.png";
-import bg3 from "../assets/bg3.png";
-import bg4 from "../assets/bg4.png";
-import bg5 from "../assets/bg5.png";
-import bg6 from "../assets/bg6.png";
+import icon1 from "../assets/icon1.png";
+import icon2 from "../assets/icon2.png";
+import icon3 from "../assets/icon3.png";
+import icon4 from "../assets/icon4.png";
+import icon5 from "../assets/icon5.png";
 const data = [
   {
     text: "Installed 50 meters above the ground",
     color: "green",
     icon: RiInstallLine,
-    image: bg1,
+    image: icon1,
   },
+
   {
     text: "17 db/km average loss",
     color: "red",
     icon: RiWaterFlashLine,
-    image: bg2,
+    image: icon2,
   },
   {
     text: "400 km coverage with 99.99% QoS",
     color: "blue",
     icon: RiCompass3Line,
-    image: bg3,
+    image: icon3,
   },
   {
     text: "Centralized PLEX and PLIN management",
     color: "purple",
     icon: RiCalendarCheckLine,
-    image: bg4,
+    image: icon4,
   },
   {
     text: "Savings in Maintenance and OpEx",
     color: "yellow",
     icon: RiExchangeDollarLine,
-    image: bg6,
+    image: icon5,
   },
 ];
 
@@ -72,7 +72,7 @@ function Hero() {
           duration: 2,
           ease: "easeOut",
         }}
-        className="absolute md:top-[30%] top-[50%] opacity-60 z-20 ">
+        className="absolute md:top-[35%] top-[50%] opacity-60 z-20 ">
         <img src={curvesreverse} alt="bg" />
       </motion.div>
       <div className="my-20 md:mx-28 md:max-w-[75%] mx-5 p-5 rounded-xl z-10 bg-[#060016] bg-opacity-60 md:bg-opacity-30">
@@ -132,7 +132,11 @@ function Hero() {
               glareMaxOpacity={0.45}
               scale={1.02}>
               <div className="w-full h-full bg-[#0d0621] flex flex-col items-center gap-3 md:p-3 p-2 rounded-xl ">
-                <img src={item.image} className="md:w-[40%] w-[60%]" alt="" />
+                <img
+                  src={item.image}
+                  className="md:w-[40%] w-[60%] hover:grayscale-0"
+                  alt=""
+                />
                 <p className="text-indigo-100 text-center md:text-sm text-[12px]">
                   {item.text}
                 </p>
