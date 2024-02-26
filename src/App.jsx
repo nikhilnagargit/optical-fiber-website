@@ -9,7 +9,7 @@ import Footer from "./components/footer";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 // change this variable to refelt the languar in complete website.   TRUE = Spanish, FALSE = english
-const spanish = true;
+const spanish = false;
 
 function App() {
   return (

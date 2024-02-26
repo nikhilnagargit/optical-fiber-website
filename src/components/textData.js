@@ -44,15 +44,15 @@ const partnersSpanish = {
 };
 
 const partnersEnglish = {
-  header: "Aliados comerciales",
-  subheader: " Expertos en la industria",
-  subheader_1: "de transmision de energia nos respaldan",
+  header: "Partners",
+  subheader: "Industry experts",
+  subheader_1: "of energy transmission support us",
 };
 
 const finalFormEnglish = {
-  header: "Limitless reliabilitym at your fingertips",
+  header: "Limitless reliability at your fingertips",
   subheader:
-    "The perfect transport network connecting both ports in Guatemala exists -- get in touch today.",
+    "The perfect transport network connecting both ports in Guatemala exists.",
   name: "Name",
   email: "Email",
   comment: "Comment",
@@ -75,8 +75,8 @@ const dwdmEnglish = {
   header: "Custom IPoDWDM",
   subheader: `Whole country covered, Optical highway over high voltage. 
     We simplify everything so you can use the same Lambda with multiple OPGW providers.`,
-  subheader_1: `Nuestro servicio WAVELENGTH le facilita a nuestros clientes mover cargas pesadas de trafico con alto rendimiento (throughput), 
-    a traves de entornos metro, metro DCI (Data Center Interconnection), Regional. Larga o Ultra Larga Distancia (Long Haul y ULH) y en enlaces submarinos. mediante el use de tecnologia DWDM, usando multiples ondas de Luz coloreadas (colored waves) sobre la misma fibra optica usan doel medio de transmision eficientemente.`,
+  subheader_1: `Our WAVELENGTH service makes it easy for our clients to move heavy traffic loads with high performance (throughput),
+  through metro, metro DCI (Data Center Interconnection), Regional environments. Long or Ultra Long Distance (Long Haul and ULH) and underwater links. Through the use of DWDM technology, using multiple colored waves of light (colored waves) on the same optical fiber, they use the transmission medium efficiently.`,
 };
 const dwdmSpanish = {
   header: "IPoDWDM a la Medida",
