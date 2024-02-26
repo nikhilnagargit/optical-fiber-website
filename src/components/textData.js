@@ -165,12 +165,12 @@ const dataEnglish = [
 const navbarSpanish = [
   { title: "Sobre Nosotras", link: "#aboutus" },
   { title: "Servicios", link: "#services" },
-  { title: "Clientes", link: "customers" },
+  { title: "Clientes", link: "#customers" },
 ];
 const navbarEnglish = [
   { title: "About", link: "#aboutus" },
   { title: "Services", link: "#services" },
-  { title: "Customers", link: "customers" },
+  { title: "Customers", link: "#customers" },
 ];
 
 export default function languageSelect(spanish) {
