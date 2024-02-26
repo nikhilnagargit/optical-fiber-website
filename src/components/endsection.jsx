@@ -9,7 +9,9 @@ import {
 import opticalfiber from "../assets/opticalfiber.png";
 import NightCityCanvas from "./canvas/nighcity";
 
-function EndSection() {
+import languageSelect from "./textData";
+function EndSection({ isSpanish }) {
+  const data = languageSelect(isSpanish);
   return (
     <div
       id="contactus"
@@ -24,21 +26,21 @@ function EndSection() {
         <img src={opticalfiber} alt="bg" />
       </div>
       <div className=" capitalize bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 text-transparent bg-clip-text md:text-[40px] text-[30px] text-center font-bold z-30   hover:text-indigo-200">
-        Unlimited reliablity on your fingertips
+        {data.final.header}
       </div>
       <div className="md:text-lg text-sm text-indigo-200 px-4 md:pb-10 pb-5 text-center z-30">
-        The perfect network for capacity. It starts today
+        {data.final.subheader}
       </div>
       <div className="bg-gradient-to-bl from-blue-600 via-indigo-400 to-green-400 z-30 p-[1px] rounded-xl opacity-85">
         <Card color="transparent" className=" md:p-8 p-5 z-30 bg-[#060016]">
           <Typography variant="h5" color="white">
-            <p>Get In Touch</p>
+            <p>{data.final.formheader}</p>
           </Typography>
 
           <form className="mt-8 mb-2 w-80">
             <div className="mb-1 flex flex-col gap-4">
               <Typography color="white" className="-mb-4">
-                Name
+                {data.final.name}
               </Typography>
               <Input
                 className=" !border-t-blue-gray-200 focus:border-white text-white"
@@ -47,7 +49,7 @@ function EndSection() {
                 }}
               />
               <Typography color="white" className="-mb-4">
-                Email
+                {data.final.email}
               </Typography>
               <Input
                 placeholder="your mail"
@@ -57,7 +59,7 @@ function EndSection() {
                 }}
               />
               <Typography color="white" className="-mb-4">
-                Comment
+                {data.final.comment}
               </Typography>
               <Input
                 placeholder="your comments"
@@ -72,7 +74,7 @@ function EndSection() {
               className="mt-6 bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 text-indigo-900 text-sm tracking-wider"
               color="indigo"
               fullWidth>
-              <p>Submit</p>
+              <p>{data.final.submit}</p>
             </Button>
           </form>
         </Card>

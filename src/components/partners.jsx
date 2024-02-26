@@ -6,19 +6,21 @@ import cfe from "../assets/cfe.png";
 import curves from "../assets/curves.png";
 import { motion } from "framer-motion";
 import { staggerContainer, fadeIn } from "./motion/motion";
+import languageSelect from "./textData";
 
-function Partners() {
+function Partners({ isSpanish }) {
+  const data = languageSelect(isSpanish);
   return (
     <div className=" mt-16 relative flex flex-col items-center text-white px-10">
       <div className="absolute md:top-[-150px] opacity-20">
         <img src={curves} alt="bg" />
       </div>
       <div className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text md:text-[40px] text-[30px] font-bold z-20 hover:text-green-400">
-        Partners
+        {data.partners.header}
       </div>
       <div className="md:text-lg text-sm text-indigo-200 md:px-4 px-1 text-center">
-        <span className="text-green-300"> World class </span> partners
-        fulfilling your requirements.
+        <span className="text-green-300"> {data.partners.subheader} </span>{" "}
+        {data.partners.subheader_1}
       </div>
       <motion.section
         variants={staggerContainer()}

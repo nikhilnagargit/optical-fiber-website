@@ -8,19 +8,20 @@ import logo5 from "../assets/logo5.png";
 
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "./motion/motion";
-
+import languageSelect from "./textData";
 const logos = [logo1, logo2, logo3, logo4, logo5];
-function CustomersSection() {
+function CustomersSection({ isSpanish }) {
+  const data = languageSelect(isSpanish);
   return (
     <div
       id="customers"
       className=" mt-10 relative flex flex-col items-center text-white px-10  z-30">
       <div className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text md:text-[40px] text-[30px] font-bold z-20   hover:text-green-400">
-        Customers
+        {data.customers.header}
       </div>
       <div className="md:text-lg text-sm text-indigo-200 md:px-4 px-1 text-center">
-        <span className="text-green-300"> 25 glorious </span> years of working
-        with industry leaders.
+        <span className="text-green-300"> {data.customers.subheader} </span>{" "}
+        {data.customers.subheader_1}
       </div>
       <motion.section
         variants={staggerContainer()}

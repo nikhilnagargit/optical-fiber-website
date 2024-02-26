@@ -69,7 +69,7 @@ const GuatemalaMap = () => {
           icon={
             new L.DivIcon({
               className: "my-div-icon",
-              html: `<div class="w-28 flex flex-col gap-2 justify-center items-center"><div class="w-4 h-4 bg-[#00ff00] rounded-full"></div>
+              html: `<div class="w-28 flex flex-col gap-2 justify-center items-center"><div class="w-3 h-3 bg-[#00ff00] rounded-full"></div>
                 <span class="text-white font-bold">${item.name}</span></div>`,
             })
           }></Marker>

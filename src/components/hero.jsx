@@ -9,13 +9,13 @@ import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "./motion/motion";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import curvesreverse from "../assets/curvesreverse.png";
+import languageSelect from "./textData";
 import {
   RiInstallLine,
   RiCompass3Line,
   RiWaterFlashLine,
   RiCalendarCheckLine,
   RiExchangeDollarLine,
-  RiAiGenerate,
 } from "react-icons/ri";
 import Tilt from "react-parallax-tilt";
 import icon1 from "../assets/icon1.png";
@@ -23,46 +23,14 @@ import icon2 from "../assets/icon2.png";
 import icon3 from "../assets/icon3.png";
 import icon4 from "../assets/icon4.png";
 import icon5 from "../assets/icon5.png";
-const data = [
-  {
-    text: "Installed 50 meters above the ground",
-    color: "green",
-    icon: RiInstallLine,
-    image: icon1,
-  },
 
-  {
-    text: "17 db/km average loss",
-    color: "red",
-    icon: RiWaterFlashLine,
-    image: icon2,
-  },
-  {
-    text: "400 km coverage with 99.99% QoS",
-    color: "blue",
-    icon: RiCompass3Line,
-    image: icon3,
-  },
-  {
-    text: "Centralized PLEX and PLIN management",
-    color: "purple",
-    icon: RiCalendarCheckLine,
-    image: icon4,
-  },
-  {
-    text: "Savings in Maintenance and OpEx",
-    color: "yellow",
-    icon: RiExchangeDollarLine,
-    image: icon5,
-  },
-];
-
-function Hero() {
+function Hero({ isSpanish }) {
+  const data = languageSelect(isSpanish);
   return (
     <div
       id="aboutus"
       className="relative flex flex-col justify-center items-center">
-      <motion.div
+      {/* <motion.div
         animate={{
           transform: "translateY(10px)",
         }}
@@ -74,7 +42,7 @@ function Hero() {
         }}
         className="absolute md:top-[35%] top-[50%] opacity-30 z-0">
         <img src={curvesreverse} alt="bg" />
-      </motion.div>
+      </motion.div> */}
       <div className="w-[100%] md:h-[1200px] h-[810px] z-0">
         {/* just replace this map image with your MAP layer. */}
         {/* <img src={guatemala} alt="img" className=""></img> */}
@@ -82,51 +50,52 @@ function Hero() {
       </div>
       <StarsCanvas />
 
-      <div className="my-20 md:mx-28 md:max-w-[75%] mx-5 p-5 rounded-xl z-10 bg-[#060016] bg-opacity-60 md:bg-opacity-30 absolute top-0 m-auto">
+      <div className="my-20 md:mx-28 md:max-w-[75%] mx-5 p-5 rounded-xl z-10 bg-[#060016] bg-opacity-60  absolute top-0 m-auto">
         <div className="text-white md:text-[50px] text-[30px]">
-          Port to port lambdas with{" "}
-          <span className="bg-gradient-to-r font-bold cursor-pointer from-blue-600 via-green-500 to-indigo-400 text-transparent bg-clip-text">
+          {data.header.punchline}
+
+          <div className="bg-gradient-to-r flex font-bold cursor-pointer from-blue-600 via-green-500 to-indigo-400 text-transparent bg-clip-text">
             <ReactTyped
-              strings={["Performance", "99.9% QOS", "Bandwidth"]}
+              strings={data.header.attributes}
               typeSpeed={40}
               backDelay={2000}
               backSpeed={40}
               loop
               showCursor={false}
             />
-          </span>
+            <div> &nbsp;</div>
+          </div>
         </div>
         <div className="text-indigo-200 text-sm md:text-lg mb-4 text-justify">
-          Transport capacity while taking care of your optical and financial
-          budget with our unified OPGW network. Network with best connecitvity.
+          {data.subHeader}
         </div>
         <div className="flex gap-4">
           <Button className="bg-gradient-to-l from-blue-700 via-green-600 to-indigo-500">
             <a href="#contactus" className="font-bold">
-              Contact Us
+              {data.header.buttoncontact}
             </a>
           </Button>
           <Button className="text-indigo-100" variant="outlined" color="indigo">
-            <p className="font-normal">Explore More</p>
+            <p className="font-normal">{data.header.buttonexplore}</p>
           </Button>
         </div>
       </div>
 
-      <div className="flex justify-center relative w-full">
-        {/* <div className="md:w-[20%] w-[30%] opacity-80 absolute left-0">
+      {/* <div className="flex justify-center relative w-full">
+        <div className="md:w-[20%] w-[30%] opacity-80 absolute left-0">
           <img src={opticalfiber} alt="bg" />
         </div>
         <div className="md:w-[20%] w-[30%] opacity-80 transform rotate-180 absolute right-0 top-[-20%]">
           <img src={opticalfiber} alt="bg" />
-        </div> */}
-      </div>
+        </div>
+      </div> */}
 
       <motion.section
         variants={staggerContainer()}
         initial="hidden"
         whileInView="show"
         className="flex w-full gap-2 md:gap-5 flex-wrap justify-center  md:m-20 m-5 rounded-lg z-40">
-        {data.map((item, idx) => (
+        {data.addedValue.map((item, idx) => (
           <motion.div
             key={idx}
             variants={fadeIn("right", "spring", 0.3 * idx, 0.75)}>

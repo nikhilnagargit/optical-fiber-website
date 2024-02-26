@@ -8,17 +8,19 @@ import EndSection from "./components/endsection";
 import Footer from "./components/footer";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
+// change this variable to refelt the languar in complete website.   TRUE = Spanish, FALSE = english
+const spanish = true;
+
 function App() {
   return (
     <>
-      <Navbar />
-      <Hero />
-
-      <Partners />
-      <CustomersSection />
-      <Services />
-      <EndSection />
-      <Footer />
+      <Navbar isSpanish={spanish} />
+      <Hero isSpanish={spanish} />
+      <Partners isSpanish={spanish} />
+      <CustomersSection isSpanish={spanish} />
+      <Services isSpanish={spanish} />
+      <EndSection isSpanish={spanish} />
+      <Footer isSpanish={spanish} />
     </>
   );
 }
