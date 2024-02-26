@@ -4,6 +4,7 @@ import { ReactTyped } from "react-typed";
 import StarsCanvas from "./canvas/stars";
 import opticalfiber from "../assets/opticalfiber.png";
 import guatemala from "../assets/guatemala.png";
+import GuatemalaMap from "../components/helpers/guatemalaMap";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "./motion/motion";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
@@ -61,7 +62,6 @@ function Hero() {
     <div
       id="aboutus"
       className="relative flex flex-col justify-center items-center">
-      <StarsCanvas />
       <motion.div
         animate={{
           transform: "translateY(10px)",
@@ -72,10 +72,17 @@ function Hero() {
           duration: 2,
           ease: "easeOut",
         }}
-        className="absolute md:top-[35%] top-[50%] opacity-60 z-20 ">
+        className="absolute md:top-[35%] top-[50%] opacity-30 z-0">
         <img src={curvesreverse} alt="bg" />
       </motion.div>
-      <div className="my-20 md:mx-28 md:max-w-[75%] mx-5 p-5 rounded-xl z-10 bg-[#060016] bg-opacity-60 md:bg-opacity-30">
+      <div className="w-[100%] md:h-[1200px] h-[810px] z-0">
+        {/* just replace this map image with your MAP layer. */}
+        {/* <img src={guatemala} alt="img" className=""></img> */}
+        <GuatemalaMap />
+      </div>
+      <StarsCanvas />
+
+      <div className="my-20 md:mx-28 md:max-w-[75%] mx-5 p-5 rounded-xl z-10 bg-[#060016] bg-opacity-60 md:bg-opacity-30 absolute top-0 m-auto">
         <div className="text-white md:text-[50px] text-[30px]">
           Port to port lambdas with{" "}
           <span className="bg-gradient-to-r font-bold cursor-pointer from-blue-600 via-green-500 to-indigo-400 text-transparent bg-clip-text">
@@ -104,16 +111,14 @@ function Hero() {
           </Button>
         </div>
       </div>
+
       <div className="flex justify-center relative w-full">
-        <div className="md:w-[50%] w-[90%] z-10 opacity-90">
-          <img src={guatemala} alt="img" className=""></img>
-        </div>
-        <div className="md:w-[20%] w-[30%] opacity-80 absolute left-0">
+        {/* <div className="md:w-[20%] w-[30%] opacity-80 absolute left-0">
           <img src={opticalfiber} alt="bg" />
         </div>
         <div className="md:w-[20%] w-[30%] opacity-80 transform rotate-180 absolute right-0 top-[-20%]">
           <img src={opticalfiber} alt="bg" />
-        </div>
+        </div> */}
       </div>
 
       <motion.section

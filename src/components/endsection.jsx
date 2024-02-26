@@ -6,16 +6,22 @@ import {
   Button,
   Typography,
 } from "@material-tailwind/react";
-
+import opticalfiber from "../assets/opticalfiber.png";
 import NightCityCanvas from "./canvas/nighcity";
 
 function EndSection() {
   return (
     <div
       id="contactus"
-      className="relative flex md:mt-20 flex-col items-center text-white px-5 ">
+      className="relative flex md:mt-20 flex-col items-center text-white px-5  bg-black">
       <div className="absolute w-full h-full">
         <NightCityCanvas />
+      </div>
+      <div className="md:w-[20%] w-[30%] opacity-60 absolute left-0 top-[20%]">
+        <img src={opticalfiber} alt="bg" />
+      </div>
+      <div className="md:w-[20%] w-[30%] opacity-50 transform rotate-180 absolute right-0 top-10">
+        <img src={opticalfiber} alt="bg" />
       </div>
       <div className=" capitalize bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 text-transparent bg-clip-text md:text-[40px] text-[30px] text-center font-bold z-30   hover:text-indigo-200">
         Unlimited reliablity on your fingertips
@@ -32,7 +38,7 @@ function EndSection() {
           <form className="mt-8 mb-2 w-80">
             <div className="mb-1 flex flex-col gap-4">
               <Typography color="white" className="-mb-4">
-                <p className="text-indigo-200">Name</p>
+                Name
               </Typography>
               <Input
                 className=" !border-t-blue-gray-200 focus:border-white text-white"
@@ -41,7 +47,7 @@ function EndSection() {
                 }}
               />
               <Typography color="white" className="-mb-4">
-                <p className="text-indigo-200">Email</p>
+                Email
               </Typography>
               <Input
                 placeholder="your mail"
@@ -51,7 +57,7 @@ function EndSection() {
                 }}
               />
               <Typography color="white" className="-mb-4">
-                <p className="text-indigo-200">Comment </p>
+                Comment
               </Typography>
               <Input
                 placeholder="your comments"

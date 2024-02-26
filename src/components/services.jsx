@@ -33,7 +33,8 @@ function Services() {
               perspective={500}
               glareEnable={true}
               glareMaxOpacity={0.45}
-              scale={1.02}>
+              scale={1.02}
+              key={idx}>
               <img src={item} alt="" className="w-full h-full" />
             </Tilt>
           ))}
