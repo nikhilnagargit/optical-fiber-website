@@ -32,7 +32,9 @@ const GuatemalaMap = () => {
       center={position}
       zoom={screenWidth < 768 ? 7 : 8}
       zoomControl={false}
-      scrollWheelZoom={false}>
+      scrollWheelZoom={false}
+      touchZoom={false}
+      dragging={false}>
       {/* <TileLayer
         url="http://map1.vis.earthdata.nasa.gov/wmts-webmerc/VIIRS_CityLights_2012/default/{time}/{tilematrixset}{maxZoom}/{z}/{y}/{x}.{format}"
         minZoom={3}
